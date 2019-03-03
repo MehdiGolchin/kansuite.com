@@ -1,0 +1,10 @@
+{
+  "name": "kansuite.com",
+  "version": "0.1.0",
+  "description": "Kansuite Website",
+  "main": "src/index.ts",
+  "repository": "https://github.com/MehdiGolchin/kansuite.com.git",
+  "author": "mehdigolchin <mehdi.golchin.kharazi@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true
+}
