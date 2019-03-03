@@ -1,10 +1,34 @@
 {
-  "name": "kansuite.com",
+  "name": "chinwag-storybook",
   "version": "0.1.0",
-  "description": "Kansuite Website",
-  "main": "src/index.ts",
-  "repository": "https://github.com/MehdiGolchin/kansuite.com.git",
+  "description": "Chinwag storybook",
+  "main": "index.js",
+  "repository": "https://github.com/MehdiGolchin/Storybook.git",
   "author": "mehdigolchin <mehdi.golchin.kharazi@gmail.com>",
-  "license": "GPL-3.0",
-  "private": true
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build:dev": "webpack --env dev --config .webpack/config.js",
+    "build:prod": "webpack --env prod --config .webpack/config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "babel-loader": "^8.0.5",
+    "typescript": "^3.2.4",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@types/react": "^16.8.4",
+    "@types/react-dom": "^16.0.11",
+    "@types/styled-components": "^4.1.10",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "styled-components": "^4.1.3"
+  }
 }
