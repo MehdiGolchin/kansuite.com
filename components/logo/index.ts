@@ -1,1 +1,1 @@
-export * from './logo.styled';
+export * from './logo.styles';
