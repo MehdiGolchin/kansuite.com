@@ -1,23 +1,11 @@
-import * as React from "react";
-import { NextStatelessComponent } from "next";
- import Header from "../components/Header"
+import * as React from 'react';
+import { Logo } from '../components';
 
-const Index = () => (
+
+const App = () => (
   <div>
-    <div>
-      <Header/>
-    </div>
-    <div>
-      logo
-    </div>
-    <div>
-      KANSUITE
-    </div>
-    <div>
-      EVENT-DRIVEN SERVERLESS PLATFORM
-    </div>
+    <Logo />
   </div>
-  
 )
 
-export default Index
+export default App;
