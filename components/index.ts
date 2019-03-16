@@ -1,5 +1,5 @@
 export * from './grid';
 export * from './logo';
-export * from './header';
-export * from './description';
+export * from './title';
+export * from './subtitle';
 export * from './top';

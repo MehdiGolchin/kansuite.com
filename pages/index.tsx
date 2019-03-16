@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Logo, Expr, Title, Row, Column } from '../components';
+import { Logo, SubTitle, Title, Row, Column } from '../components';
 
 const App = () => (
   <Row cover vertical>
@@ -7,8 +7,8 @@ const App = () => (
       <Logo />
     </Column>
     <Column>
-      <Title>KANSUITE</Title>
-      <Expr>EVENT-DRIVEN SERVERLESS PLATFORM</Expr>
+      <Title color="#fff" fontFamily="Tahoma" upperCase>kansuite</Title>
+      <SubTitle color="#808080" fontFamily="Tahoma" upperCase>event-driven serverless platform</SubTitle>
     </Column>
   </Row>
 )
