@@ -1,20 +1,16 @@
 import * as React from 'react';
-import { Logo, Expr, HeaderStyle } from '../components';
-import { HeaderTop } from '../components/top';
-
-const backgroundStyle = {
-  backgroundColor: '#000',
-  height: '100vh',
-  textAlign: 'center' as 'center'
-}
+import { Logo, Expr, Title, Row, Column } from '../components';
 
 const App = () => (
-  <div style={backgroundStyle}> 
-    <HeaderTop /> 
-    <Logo />
-    <HeaderStyle>KANSUITE</HeaderStyle>
-    <Expr>EVENT-DRIVEN SERVERLESS PLATFORM</Expr>
-  </div>
+  <Row cover vertical>
+    <Column grow={2} gutter={50}>
+      <Logo />
+    </Column>
+    <Column>
+      <Title>KANSUITE</Title>
+      <Expr>EVENT-DRIVEN SERVERLESS PLATFORM</Expr>
+    </Column>
+  </Row>
 )
 
 export default App;
