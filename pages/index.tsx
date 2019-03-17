@@ -1,14 +1,15 @@
 import * as React from 'react';
-import { Logo, SubTitle, Title, Row, Column } from '../components';
+import { Logo, Subtitle, Title, Row, Column } from '../components';
+import { Default } from '../themes';
 
 const App = () => (
   <Row cover vertical>
     <Column grow={2} gutter={50}>
       <Logo />
     </Column>
-    <Column>
-      <Title color="#fff" fontFamily="Tahoma" upperCase>kansuite</Title>
-      <SubTitle color="#808080" fontFamily="Tahoma" upperCase>event-driven serverless platform</SubTitle>
+    <Column grow={1} justify="center">
+      <Title theme={Default} upperCase>kansuite</Title>
+      <Subtitle theme={Default} upperCase>event-driven serverless platform</Subtitle>
     </Column>
   </Row>
 )

@@ -8,6 +8,7 @@ export interface RowProps {
 export interface ColumnProps {
     readonly grow?: number;
     readonly gutter?: number;
+    readonly justify?: string;
 }
 
 export const Row = styled('div') <RowProps>`
@@ -20,10 +21,8 @@ export const Row = styled('div') <RowProps>`
 `;
 
 export const Column = styled('div') <ColumnProps>`
-    background-color: black;
-    ${(props) => props.grow && css`
-        flex: ${props.grow};
-    `};
+    text-align: ${(props) => props.justify};
+    flex: ${(props) => props.grow || 1};
     ${(props) => props.gutter && css`
         padding: ${props.gutter}px;
     `}
