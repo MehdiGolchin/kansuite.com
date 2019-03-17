@@ -7,8 +7,8 @@ const App = () => (
       <Logo />
     </Column>
     <Column grow={1} justify="center">
-      <Title upperCase>kansuite</Title>
-      <Subtitle upperCase>event-driven serverless platform</Subtitle>
+      <Title upperCase>Kansūite</Title>
+      <Subtitle upperCase>Event-driven Serverless Platform</Subtitle>
     </Column>
   </Row>
 )
