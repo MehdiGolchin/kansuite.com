@@ -1,0 +1,3 @@
+[submodule "packages/iota"]
+	path = packages/iota
+	url = ../iota.git
