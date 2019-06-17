@@ -3,6 +3,7 @@ import { ServerStyleSheet, ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './globalStyle';
 import { Default } from '../themes';
 
+
 export default class DefaultDocument extends Document {
 
   static getInitialProps({ renderPage }) {
@@ -12,10 +13,12 @@ export default class DefaultDocument extends Document {
     const page = renderPage((Page) => (props) =>
       sheet.collectStyles(
         <ThemeProvider theme={Default}>
-          <>
-            <GlobalStyle {...props} />
-            <Page {...props} />
-          </>
+          
+            <>
+              <GlobalStyle {...props} />
+              <Page {...props} />
+            </>
+          
         </ThemeProvider>
       ),
     );

@@ -4,7 +4,7 @@ export const Default = {
     ],
     fontFamily: 'Open Sans,Tahoma',
     fontSize: '20px',
-    titlecolor: '#fff',
-    subtitlecolor: '#808080',
+    titleColor: '#fff',
+    subTitleColor: '#808080',
     backgroundColor: '#000'
 };

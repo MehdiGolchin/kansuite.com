@@ -3,10 +3,18 @@ module.exports = function(api) {
 
   const presets = [
     "next/babel",
-    ["@babel/preset-typescript", { isTSX: true, allExtensions: true }]
+    "@zeit/next-typescript/babel",
+    ["@babel/preset-typescript", { isTSX: true, allExtensions: true }],
+    ["@babel/preset-env",
+      {
+        targets: {
+          node: "current",
+        }
+      }
+    ]
   ];
 
-  const plugins = [];
+  const plugins = [["styled-components", { "ssr": true, "displayName": true, "preprocess": false }]];
 
   return {
     presets,

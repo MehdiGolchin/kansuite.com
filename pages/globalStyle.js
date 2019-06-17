@@ -1,4 +1,4 @@
-import { createGlobalStyle, css, injectGlobal } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 
 // ${(props) => props.theme.fonts && props.theme.fonts.map(file => css`
 //             @import url(${file});
@@ -12,8 +12,9 @@ export const GlobalStyle = createGlobalStyle`
         ${(props) => props.theme.fonts && props.theme.fonts.map(file => css`
                     @import url(${file});
                 `)}
-        color: ${(props) => props.theme.titlecolor};    
-        font-family: ${(props) => props.theme.fontFamily};        
+        color: ${(props) => props.theme.titleColor};    
+        font-family: ${(props) => props.theme.fontFamily}; 
+        font-size: ${(props) => props.theme.fontSize};    
         background-color: ${(props) => props.theme.backgroundColor};
         height: 100%;
         margin: 0;

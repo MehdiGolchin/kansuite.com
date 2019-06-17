@@ -1,4 +1,5 @@
 // next.config.js
+const webpack = require('webpack');
 const withTypescript = require('@zeit/next-typescript');
 
 module.exports = withTypescript({
@@ -16,6 +17,13 @@ module.exports = withTypescript({
         }
       ]
     });
+
+    // config.optimization = {
+    //   splitChunks: {
+    //     name: 'vendor',
+    //     minChunks: Infinity,
+    //   }
+    // };
 
     return config;
   }

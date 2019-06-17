@@ -1,0 +1,20 @@
+{
+  "name": "@kansuite/iota",
+  "version": "0.1.0-706e721b",
+  "description": "Iota is a small set of react components that designed and used by Kansuite project.",
+  "main": "./dist/index.js",
+  "repository": "https://github.com/MehdiGolchin/Storybook.git",
+  "author": "Mehri Golchin <mehri.golchin@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build:dev": "webpack --env dev --config .webpack/config.js",
+    "build:prod": "webpack --env prod --config .webpack/config.js"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^16.7.0",
+    "styled-components": "^4.1.3"
+  }
+}
